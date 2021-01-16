@@ -1,7 +1,7 @@
 # playlist-defender
 An abridged version of the Playlist Defender repository, consisting of only the files of the project I made major contributions to.
 
-This is not a complete repository. Cloning this repo and attempting to run this code will not do anything. These are the four most relevant files I created while working as an intern on the Playlist Defender project with my Dad. The repository we worked on was private and it made the most sense to simply upload these files so they are easier to find, too.
+This is not a complete repository. Parts of this code reference files, functions, and methods that do not exist in this repo, so cloning and trying to run this code will definitely not work. These are the four most relevant files I wrote while working as an intern on the Playlist Defender project with my Dad. The repository we worked on was private and it made the most sense to simply upload these files so they are easier to find, too.
 
 ## How the project worked:
 Playlist Defender was created to keep track of a user's playlists over time, noting as songs are added and removed.
@@ -14,21 +14,21 @@ The central feature of the app required us to have some way to compare two versi
 
 ```python 
 library_version = {'version': '1.0',
-                             'date': 'YYYY-MM-DD',
-                             'library': [{'name': 'Playlist Name 1',
-                                          'tracks': [{'title': 'Song Title 1',
-                                                      'artist': 'Song Artist Name 1',
-                                                      'album': 'Song Album Name 1'},
-                                                     {'title': 'Song Title 2',
-                                                      'artist': 'Song Artist Name 2',
-                                                      'album': 'Song Album Name 2'}]},
-                                         {'name': 'Playlist Name 2',
-                                          'tracks': [{'title': 'Song Title 1',
-                                                      'artist': 'Song Artist Name 1',
-                                                      'album': 'Song Album Name 1'},
-                                                     {'title': 'Song Title 2',
-                                                      'artist': 'Song Artist Name 2',
-                                                      'album': 'Song Album Name 2'}]}]}
+                   'date': 'YYYY-MM-DD',
+                   'library': [{'name': 'Playlist Name 1',
+                                'tracks': [{'title': 'Song Title 1',
+                                            'artist': 'Song Artist Name 1',
+                                            'album': 'Song Album Name 1'},
+                                           {'title': 'Song Title 2',
+                                            'artist': 'Song Artist Name 2',
+                                            'album': 'Song Album Name 2'}]},
+                               {'name': 'Playlist Name 2',
+                                'tracks': [{'title': 'Song Title 1',
+                                            'artist': 'Song Artist Name 1',
+                                            'album': 'Song Album Name 1'},
+                                           {'title': 'Song Title 2',
+                                            'artist': 'Song Artist Name 2',
+                                            'album': 'Song Album Name 2'}]}]}
 ```
 
 So I took these library formats and created two functions to perform the necessary comparing.
