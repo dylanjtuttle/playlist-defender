@@ -1,7 +1,7 @@
 # playlist-defender
 An abridged version of the Playlist Defender repository, consisting of only the files of the project I made major contributions to.
 
-This is not a complete repository. Parts of this code reference files, functions, and methods that do not exist in this repo, so cloning and trying to run this code will definitely not work. These are the four most relevant files I wrote while working as an intern on the Playlist Defender project with my Dad. The repository we worked on was private and it made the most sense to simply upload these files so they are easier to find, too.
+This is not a complete repository. Parts of this code reference files, functions, and methods that do not exist in this repo, so cloning and trying to run this code will definitely not work. These are the four most relevant files I wrote while working as an intern on the Playlist Defender project. The repository we worked on was private and it made the most sense to simply upload these files so they are easier to find, too. I have full permission from the owner of the repository to upload these files and make them publicly available.
 
 ## How the project worked:
 Playlist Defender was created to keep track of a user's playlists over time, noting as songs are added and removed.
