@@ -34,7 +34,7 @@ library_version = {'version': '1.0',
 So I took these library formats and created two functions to perform the necessary comparing.
 
 #### compare_playlist_versions(old_version, new_version)
-This function took input of the form `library_version['library']['tracks']` and compared the two versions by finding song dictionaries that occurred in one version but not the other. It then returned this information in the form:
+This function took input of the form `library_version['library'][0]['tracks']` and compared the two versions by finding song dictionaries that occurred in one version but not the other. It then returned this information in the form:
 
 ```
 playlist_changes = {'added_songs': [list of added songs], 'removed_songs': [list of removed songs]}
@@ -56,7 +56,7 @@ This file actually generated the the change history screen of the application, a
 
 The class `DisplaySpotifyChangeHistory()` utilized [BeeWare Toga](https://github.com/beeware/toga), an object-oriented, Python native, OS native GUI toolkit. The handful of methods in this class generate the change history output, set up the window object, and populate it with the output using Bootstrap in HTML and CSS.
 
-The most interesting part of this file occurs in the file handling section, where the logic of downloading and saving the library versions is formulated. The file management system I devised works as such:
+The most interesting part of this file occurs in the file IO section, where the logic of downloading and saving the library versions is formulated. The file management system I devised works as such:
 
   * The original library version is saved in entirety, named `original_library_version.json`
   * The two latest library versions are also saved in their entirety, named `latest_library_version.json` and `previous_library_version.json`
